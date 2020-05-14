@@ -19,7 +19,9 @@ CREATE INDEX idx_emp_02 ON emp (deptno, mgr, hiredate, sal);
 CREATE INDEX idx_emp_03 ON emp (ename);
 
 idx4]과제
-
+CREATE UNIQUE INDEX idx_u_emp_01 ON emp (empno);
+CREATE UNIQUE INDEX idx_u_emp_02 ON emp (deptno, sal);
+CREATE INDEX idx_u_dept_01 ON dept (deptno, loc);
 
 실행계획
 
